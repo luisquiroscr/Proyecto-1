@@ -80,7 +80,7 @@ li {
 }
 
 .cabecera {
-    height: 350px;
+    height: 200px;
     background-image: url("/Proyecto-1/Assets/imagenes/portadacod.png");
     background-blend-mode: overlay;
     background-size: cover;
@@ -102,8 +102,8 @@ li {
     text-decoration: none;
 }
 
-.boton:hover{
-   background-color: #F09319;
+.boton:hover {
+    background-color: #F09319;
 }
 
 .fa-chevron-right {}
