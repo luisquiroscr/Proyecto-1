@@ -1,227 +1,223 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    color: #fff;
-    background-color: #000;
-    font-family: 'Oswald'
-    min-height: 100vh;
-
-
+  color: #fff;
+  background-color: #000;
+  font-family: "Oswald";
+  min-height: 100vh;
 }
 
 .contenedor {
-    width: 90%;
-    margin: 10px auto;
+  width: 90%;
+  margin: 10px auto;
 }
 
 .navegacion-principal {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15pxpx;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15pxpx;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .navegacion-principal__marca {
-    display: flex;
-    justify-content: flex-start;
-
+  display: flex;
+  justify-content: flex-start;
 }
 
 .navegacion-principal__marca img {
-    border: 1px black;
-    width: 50px;
-    height: 25px;
-
+  border: 1px black;
+  width: 50px;
+  height: 25px;
 }
 
 .navegacion-principal__menu {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    width: 100%;
-    gap: 10pxpx;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 100%;
+  gap: 10pxpx;
 }
 
 .navegacion-principal__menu a {
-    color: #fff;
-    text-decoration: none;
-    height: 10px;
-    padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  height: 10px;
+  padding: 15px;
 }
 
 .navegacion-principal__menu a:hover {
-    color: #F09319;
-
+  color: #f09319;
 }
 
 li {
-    list-style: none;
-    text-align: center;
-    color: #fff;
+  list-style: none;
+  text-align: center;
+  color: #fff;
 }
 
-
 .navegacion-principal__menu-derecha {
-    display: flex;
-    justify-content: flex-end;
-
+  display: flex;
+  justify-content: flex-end;
 }
 
 .fa-search {
-    color: #fff;
-
+  color: #fff;
 }
 
 .cabecera {
-    height: 200px;
-    width: 100%;
-    background: #373A40;
-    background-image: url("/Proyecto-1/Assets/imagenes/portadacod.png");
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-shadow: #272829;
-    padding: 20px 20px;
-    margin-bottom: 10px;
-    margin-top: 15px;
+  height: 200px;
+  width: 100%;
+  background: #373a40;
+  background-image: url("/Assets/imagenes/portadacod.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: #272829;
+  padding: 20px 20px;
+  margin-bottom: 10px;
+  margin-top: 15px;
 }
 
-
 .boton {
-    background-color: #394457;
-    color: #fff;
-    text-decoration: none;
+  background-color: #394457;
+  color: #fff;
+  text-decoration: none;
 }
 
 .boton:hover {
-    background-color: #F09319;
+  background-color: #f09319;
 }
 
-.fa-chevron-right {}
-
-
+.fa-chevron-right {
+}
 
 .tarjetas-noticias {
-   display: grid;
-   grid-template-columns: repeat(4,1fr);
-   gap: 15px;
-   justify-content: space-between;
-   width: 100%;
-   height: auto;
-  
-}
-
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
 }
 
 .tarjetas-noticias__tarjeta {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between ;
-    gap: 20px;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.tarjetas-noticias__tarjeta> h3, p{
-    display: flex ;
-    flex-direction: column;
-    align-content: stretch ;
-    text-align: center;
-    margin: 10px;
-   
-
+.tarjetas-noticias__tarjeta > h3,
+p {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  text-align: center;
 }
+
 .tarjetas-noticias__tarjeta img {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-around;
-    width: 100%;
-    height: 25%;
-    gap: 15px;
-    object-fit: cover; /*Evita que la imagen se distorcione*/
-    
-
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  width: 100%;
+  height: 25%;
+  gap: 15px;
+  object-fit: cover; /*Evita que la imagen se distorcione*/
+  margin-top: 30px;
 }
 
-.tarjetas-noticias-dos{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 15px;
-    height: auto;
-}
-
-.tarjetas-noticias__tarjeta-dos{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.tarjetas-noticias__tarjeta-dos img{
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    width: 100%;
-    height: 25%;
-    gap: 15px;
-    object-fit: cover; /*Evita que la imagen se distorcione*/
-
-}
-
-
-.fa-angle-double-right {
+.tarjetas-noticias-dos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
   
 }
 
-.banner-tarjetas-uno {
-    height: 200px;
-    background: #373A40;
-    background-image: url("/Proyecto-1/Assets/imagenes/portadacod.png");
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-shadow: #272829;
-    padding: 20px 20px;
-    margin-bottom: 10px;
-    margin-top: 15px;
+.tarjetas-noticias__tarjeta-dos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 400px; /* Se agrego altura maxima de 400px al contenedor*/
+  padding: 0;
+}
 
+.tarjetas-noticias__tarjeta-dos img {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 100%;
+  height: 25%;
+  gap: 15px;
+  object-fit: cover; /*Evita que la imagen se distorcione*/
 
 }
 
-.banner-tarjetas-uno__contenido {}
+.fa-angle-double-right {
+}
 
-.banner-tarjetas-dos {}
+.banner-tarjetas-uno {
+  height: 200px;
+  background: #373a40;
+  background-image: url("/Assets/imagenes/portadacod.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: #272829;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
 
-.banner-tarjetas-dos__contenido {}
+/* .banner-tarjetas-uno, .tarjetas-noticias__tarjeta-dos {
+    margin: 0;
+/* } */ /*prueba para quitar el margen entre el contenedor de arriba banner-tarjetas-uno y tarjetas-noticias__tarjeta-dos  */
 
-.social {}
+.banner-tarjetas-uno__contenido {
+}
 
-.social__enlaces {}
+.banner-tarjetas-dos {
+}
 
-.fab {}
+.banner-tarjetas-dos__contenido {
+}
 
-.fa-facebook-f {}
+.social {
+}
 
-.enlaces-pie {}
+.social__enlaces {
+}
 
-.enlaces-pie__contenedor {}
+.fab {
+}
 
-.enlaces-pie__lista {}
+.fa-facebook-f {
+}
 
-.pie {}
+.enlaces-pie {
+}
+
+.enlaces-pie__contenedor {
+}
+
+.enlaces-pie__lista {
+}
+
+.pie {
+}
