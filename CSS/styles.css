@@ -74,7 +74,7 @@ li {
   height: 200px;
   width: 100%;
   background: #373a40;
-  background-image: url("/Assets/imagenes/portadacod.png");
+  background-image: url("../Assets/imagenes/portadacod.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-attachment: fixed;
@@ -99,15 +99,16 @@ li {
   background-color: #f09319;
 }
 
-.fas {  /* Clase para cambiar color a la flecha */
+.fas {
+  /* Clase para cambiar color a la flecha */
   color: #fff;
 }
 
 .tarjetas-noticias {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-items: stretch;
   gap: 15px;
-  justify-content: space-between;
   width: 100%;
   height: auto;
   margin: 10px auto;
@@ -116,8 +117,8 @@ li {
 .tarjetas-noticias__tarjeta {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  justify-items: stretch;
+  gap: 5px;
 }
 
 .tarjetas-noticias__tarjeta > h3,
@@ -125,9 +126,21 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
+  align-content: flex-start;
   text-align: center;
   width: 100%;
+  gap: 10px;
+}
+
+.tarjetas-noticias__tarjeta > a {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  gap: 10px;
 }
 
 .tarjetas-noticias__tarjeta img {
@@ -135,10 +148,13 @@ p {
   justify-content: space-between;
   align-content: space-around;
   width: 100%;
-  height: 25%;
+  height: 150px;
   gap: 15px;
-  object-fit: cover; /*Evita que la imagen se distorcione*/
-  margin-top: 30px;
+  object-fit: fill;
+  /*Evita que la imagen se distorcione*/
+  margin-top: 10px;
+  background-blend-mode: overlay;
+  background-size: cover;
 }
 
 .boton {
@@ -157,8 +173,10 @@ p {
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  max-height: 400px; /* Se agrego altura maxima de 400px al contenedor */
-  align-items: center; /* Centrar h3 y enlaces */
+  max-height: 400px;
+  /* Se agrego altura maxima de 400px al contenedor */
+  align-items: center;
+  /* Centrar h3 y enlaces */
 }
 
 .tarjetas-noticias__tarjeta-dos img {
@@ -166,10 +184,23 @@ p {
   justify-content: space-between;
   align-content: flex-start;
   width: 100%;
-  height: 50%;
+  height: 200px;
   gap: 15px;
-  object-fit: cover; /*Evita que la imagen se distorcione*/
+
+  object-fit: content;
+  /*Evita que la imagen se distorcione*/
   margin-bottom: 10px;
+}
+
+.tarjetas-noticias__tarjeta-dos > a {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  gap: 10px;
 }
 
 .fa-angle-double-right {
@@ -178,7 +209,7 @@ p {
 .banner-tarjetas-uno {
   height: 200px;
   background: #373a40;
-  background-image: url("/Assets/imagenes/portadacod.png");
+  background-image: url("../Assets/imagenes/portadacod.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-attachment: fixed;
@@ -199,7 +230,7 @@ p {
 .banner-tarjetas-dos {
   height: 200px;
   background: #373a40;
-  background-image: url("/Assets/imagenes/portadacod.png");
+  background-image: url("../Assets/imagenes/portadacod.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-attachment: fixed;
@@ -223,6 +254,7 @@ p {
   margin-top: 30px;
   margin-bottom: 20px;
   height: 100px;
+  gap: 10px;
 }
 
 .social p {
@@ -303,4 +335,47 @@ p {
 
 .pie h3 {
   text-align: center;
+}
+
+/* Pagina Sobre Nosotros */
+
+.creadores {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  margin: 20px auto;
+  justify-content: space-around;
+  background-image: url("../Assets/imagenes/portadacod.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: #272829;
+  padding: 40px 20px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.creadores h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta-creador {
+  background-color: gray;
+  height: 600px;
+  width: 40%;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.tarjeta-creador img {
+  border-radius: 60%;
+  margin: 20px;
+  height: 250px;
+  width: 300px;
 }
