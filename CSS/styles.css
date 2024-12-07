@@ -139,6 +139,7 @@ p {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
   width: 100%;
   gap: 10px;
 }
@@ -176,6 +177,7 @@ p {
   max-height: 400px;
   /* Se agrego altura maxima de 400px al contenedor */
   align-items: center;
+  text-decoration: none;
   /* Centrar h3 y enlaces */
 }
 
@@ -199,8 +201,18 @@ p {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
   width: 100%;
   gap: 10px;
+}
+
+.tarjetas-noticias__tarjeta> a:hover{
+  color: #f09319;
+ }
+
+.tarjetas-noticias__tarjeta-dos> a:hover{
+  color: #f09319;
+  
 }
 
 .fa-angle-double-right {
@@ -267,6 +279,12 @@ p {
   gap: 10px;
 }
 
+.social__enlaces a{
+  text-decoration: none;
+  
+
+}
+
 .social__enlaces i {
   margin-top: 10px;
   color: #fff;
@@ -275,13 +293,25 @@ p {
 .fab {
 }
 
-.fa-facebook-f {
+.fa-facebook-f, 
+.fab fa-linkedin {
+  text-decoration: none;
 }
 
-.enlaces-pie {
+.fa-playstation{
+  color:  rgb(0, 112, 209);
+  font-size: 20px;
 }
+.fa-xbox{
+  color:#107c10;
+  font-size: 20px;
+
+}
+
 
 .enlaces-pie__lista {
+  text-decoration: none;
+  list-style: none;
 }
 
 .enlaces-pie {
