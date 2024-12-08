@@ -394,8 +394,9 @@ p {
 .tarjeta-creador img {
   border: 1px solid black;
   border-radius: 60%;
+  box-shadow: 4px 4px 10px #373a40;
   margin: 20px;
-  height: 250px;
-  width: 300px;
+  height: 150px;
+  width: 150px;
   object-fit: contain;
 }
