@@ -85,8 +85,7 @@ li {
   text-align: center;
   text-shadow: #272829;
   padding: 20px 20px;
-  margin-bottom: 10px;
-  margin-top: 15px;
+  margin: 15px 0px 10px 0px;
 }
 
 .boton {
@@ -107,11 +106,11 @@ li {
 .tarjetas-noticias {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-items: stretch;
+  /* justify-items: stretch; */
   gap: 15px;
-  width: 100%;
-  height: auto;
-  margin: 10px auto;
+  /* width: 100%; */
+  /* height: auto; */
+  /* margin: 10px auto; */
 }
 
 .tarjetas-noticias__tarjeta {
@@ -121,7 +120,7 @@ li {
   gap: 5px;
 }
 
-.tarjetas-noticias__tarjeta > h3,
+.tarjetas-noticias__tarjeta>h3,
 p {
   display: flex;
   flex-direction: column;
@@ -132,7 +131,7 @@ p {
   gap: 10px;
 }
 
-.tarjetas-noticias__tarjeta > a {
+.tarjetas-noticias__tarjeta>a {
   display: flex;
   justify-items: center;
   justify-content: center;
@@ -194,7 +193,7 @@ p {
   margin-bottom: 10px;
 }
 
-.tarjetas-noticias__tarjeta-dos > a {
+.tarjetas-noticias__tarjeta-dos>a {
   display: flex;
   justify-items: center;
   justify-content: center;
@@ -206,17 +205,16 @@ p {
   gap: 10px;
 }
 
-.tarjetas-noticias__tarjeta> a:hover{
+.tarjetas-noticias__tarjeta>a:hover {
   color: #f09319;
- }
-
-.tarjetas-noticias__tarjeta-dos> a:hover{
-  color: #f09319;
-  
 }
 
-.fa-angle-double-right {
+.tarjetas-noticias__tarjeta-dos>a:hover {
+  color: #f09319;
+
 }
+
+.fa-angle-double-right {}
 
 .banner-tarjetas-uno {
   height: 200px;
@@ -236,8 +234,7 @@ p {
   margin-top: 15px;
 }
 
-.banner-tarjetas-uno__contenido {
-}
+.banner-tarjetas-uno__contenido {}
 
 .banner-tarjetas-dos {
   height: 200px;
@@ -257,8 +254,7 @@ p {
   margin-top: 15px;
 }
 
-.banner-tarjetas-dos__contenido {
-}
+.banner-tarjetas-dos__contenido {}
 
 .social {
   display: flex;
@@ -279,9 +275,9 @@ p {
   gap: 10px;
 }
 
-.social__enlaces a{
+.social__enlaces a {
   text-decoration: none;
-  
+
 
 }
 
@@ -290,20 +286,20 @@ p {
   color: #fff;
 }
 
-.fab {
-}
+.fab {}
 
-.fa-facebook-f, 
+.fa-facebook-f,
 .fab fa-linkedin {
   text-decoration: none;
 }
 
-.fa-playstation{
-  color:  rgb(0, 112, 209);
+.fa-playstation {
+  color: rgb(0, 112, 209);
   font-size: 20px;
 }
-.fa-xbox{
-  color:#107c10;
+
+.fa-xbox {
+  color: #107c10;
   font-size: 20px;
 
 }
@@ -404,8 +400,10 @@ p {
 }
 
 .tarjeta-creador img {
+  border: 1px solid black;
   border-radius: 60%;
   margin: 20px;
   height: 250px;
   width: 300px;
+  object-fit: contain;
 }
