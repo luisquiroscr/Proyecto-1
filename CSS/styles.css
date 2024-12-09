@@ -218,7 +218,7 @@ p {
 
 .banner-tarjetas-uno {
   height: 200px;
-  background: #373a40;
+  background: transparent;
   background-image: url("../Assets/imagenes/portadacod.png");
   background-blend-mode: overlay;
   background-size: cover;
@@ -236,7 +236,7 @@ p {
 
 .banner-tarjetas-dos {
   height: 200px;
-  background: #373a40;
+  background: transparent;
   background-image: url("../Assets/imagenes/portadacod.png");
   background-blend-mode: overlay;
   background-size: cover;
@@ -374,21 +374,42 @@ p {
   padding: 40px 20px;
   margin-bottom: 10px;
   margin-top: 15px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
+  max-width: 100%;
+  height: 800px;
 }
 
 .creadores h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #272829;
 }
 
 .tarjeta-creador {
-  background-color: gray;
   height: 600px;
   width: 40%;
   margin: 20px auto;
   border-radius: 20px;
+  padding: 20px;
+}
+
+.tarjeta-creador p,
+.tarjeta-creador h3,
+.tarjeta-creador h4{
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #272829;
+  max-width: 100%;
+  max-height: 600px;
+  margin: 0px auto;
+  padding: 15px;
+
+}
+
+.tarjeta-creador p:hover,
+.tarjeta-creador h3:hover,
+.tarjeta-creador h4:hover{
+  color: #000;
 }
 
 .tarjeta-creador img {
