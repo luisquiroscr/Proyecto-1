@@ -12,6 +12,11 @@ body {
   min-height: 100vh;
 }
 
+.background-audio{
+  display: none;
+
+}
+
 .contenedor {
   width: 90%;
   margin: 10px auto;
