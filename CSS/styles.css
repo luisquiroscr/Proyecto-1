@@ -322,7 +322,7 @@ p {
 
 .enlaces-pie__contenedor {
   display: flex;
-  /* flex-direction: column; ultimo cambio agregado */
+  flex-direction:row; 
   padding: 20px;
   gap: 20px;
   text-align: center;
@@ -344,53 +344,55 @@ p {
   margin: 10px;
 } */
 
-.pie h3 {
+/* .pie h3 {
   text-decoration: none;
   color: #bdb8b8;
   font-size: 10px;
   padding: 10px;
-}
+}*/
 
 .pie {
+  text-align: center;
   background-color: grey;
   width: 100%;
   font-size: 15px;
 }
-
+/*
 .enlaces-pie__lista,
 .enlaces-pie__lista h3 {
   /* display: flex;
   justify-content: space-between; */
-  align-items: center;
-  color: #fff;
+  /* align-items: center; */
+  /* color: #fff;
 }
 
 .pie h3 {
   text-align: center;
-}
+} */
 
 /* Pagina Sobre Nosotros */
 
-.creadores {
-  display: flex;
+/* .creadores { revisar para poder fijar el alto del contenedor sin que varie */
+.creadores{
+display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  min-height: 100%;
+  width: 100%;
   gap: 10px;
   text-align: center;
   margin: 20px auto;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   background-image: url("../Assets/imagenes/portadacod.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-attachment: fixed;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-shadow: #272829;
+  /* justify-content: center;
+  align-items: center; */
   padding: 40px 20px;
   margin-bottom: 10px;
   margin-top: 15px;
   /* border-radius: 8px; */
-  max-width: 100%;
-  height: 800px;
 }
 
 .creadores h2 {
@@ -401,20 +403,24 @@ p {
 }
 
 .tarjeta-creador {
-  height: 600px;
-  width: 40%;
+  min-height: 100%;
+  /* width: 100%; */
   margin: 20px auto;
   border-radius: 20px;
   padding: 20px;
 }
 
+/* revisar esta parte tambien para ver como se hace para que las columnas sean inmovibles */
 .tarjeta-creador p,
 .tarjeta-creador h3,
 .tarjeta-creador h4 {
+  /* display: grid;
+  /* grid-template-columns: repeat(1, 1fr); */
+  /* grid-template-rows: repeat(1, 1fr); */
   background-color: rgba(255, 255, 255, 0.5);
   color: #272829;
-  max-width: 100%;
-  max-height: 600px;
+  /* width: auto; */
+  /* min-height: 100%; */
   margin: 0px auto;
   padding: 15px;
 }
