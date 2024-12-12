@@ -149,7 +149,7 @@ p {
   width: 100%;
   gap: 10px;
 }
-.video{
+.video {
   display: flex;
   justify-content: space-between;
   align-content: space-around;
@@ -369,7 +369,7 @@ p {
   text-align: center;
 }
 
-/* Pagina Sobre Nosotros */
+/* ** Pagina Sobre Nosotros y Creadores ** */
 
 .creadores {
   display: flex;
@@ -385,12 +385,13 @@ p {
   align-items: center;
   text-align: center;
   text-shadow: #272829;
-  padding: 40px 20px;
+  padding: 20px 20px;
   margin-bottom: 10px;
   margin-top: 15px;
   /* border-radius: 8px; */
   max-width: 100%;
-  height: 800px;
+  height: 1200px;
+  flex-wrap: wrap;
 }
 
 .creadores h2 {
@@ -403,14 +404,15 @@ p {
 .tarjeta-creador {
   height: 600px;
   width: 40%;
-  margin: 20px auto;
+  margin: 10px auto;
   border-radius: 20px;
   padding: 20px;
 }
 
 .tarjeta-creador p,
 .tarjeta-creador h3,
-.tarjeta-creador h4 {
+.tarjeta-creador h4,
+.tarjeta-contenido__descripcion {
   background-color: rgba(255, 255, 255, 0.5);
   color: #272829;
   max-width: 100%;
@@ -421,7 +423,9 @@ p {
 
 .tarjeta-creador p:hover,
 .tarjeta-creador h3:hover,
-.tarjeta-creador h4:hover {
+.tarjeta-creador h4:hover,
+.tarjeta-contenido__descripcion h3:hover,
+.tarjeta-contenido__descripcion p:hover {
   color: #000;
 }
 
@@ -433,4 +437,21 @@ p {
   height: 150px;
   width: 150px;
   object-fit: contain;
+}
+
+/* Sobre Nuestra Pagina */
+
+.tarjeta-descripcion {
+  display: flex;
+  margin-top: 10px;
+}
+.tarjeta-contenido__descripcion {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  margin: 10px auto;
+  width: 90%;
 }
