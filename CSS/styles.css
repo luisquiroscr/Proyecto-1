@@ -232,24 +232,7 @@ p {
   color: #f09319;
 }
 
-.banner-tarjetas-uno {
-  height: 200px;
-  background: transparent;
-  background-image: url("../Assets/imagenes/portadacod.png");
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-shadow: #272829;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  margin-top: 15px;
-}
-
+.banner-tarjetas-uno,
 .banner-tarjetas-dos {
   height: 200px;
   background: transparent;
@@ -267,6 +250,24 @@ p {
   margin-bottom: 10px;
   margin-top: 15px;
 }
+
+/* .banner-tarjetas-dos {
+  height: 200px;
+  background: transparent;
+  background-image: url("../Assets/imagenes/portadacod.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: #272829;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+} */
 
 .social {
   display: flex;
