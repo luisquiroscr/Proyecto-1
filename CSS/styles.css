@@ -375,18 +375,12 @@ p {
 
 /* Pagina Sobre Nosotros */
 
-.contenido-creadores {
-  display: flex;
-  gap: 20px;
-  background-color: grey;
-  padding: 20px;
 
-}
 
 /* .creadores { revisar para poder fijar el alto del contenedor sin que varie */
 .creadores {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  grid-template-columns: 1fr; /* Dos columnas de igual tamaño */
   gap: 10px; /* Espaciado entre las tarjetas */
   max-height: 100%; /* Altura del contenedor */
   width: 100%; /* Ancho completo */
@@ -405,6 +399,17 @@ p {
   align-items: center;
   justify-content: center;
   color: #272829;
+}
+
+/* Se crea div con las dos tarjetas dentro para controlarlas de forma homogenea */
+.contenido-creadores {
+  display: flex;
+ justify-items: center;
+  gap: 20px;
+  background-color: grey;
+  padding: 20px;
+  max-width: 100%;
+
 }
 
 .tarjeta-creador {
@@ -571,5 +576,4 @@ p {
 } */
 
 /* ======= */
-/* Revisar si sincroniza bien  */
-/* >>>>>>> 582965af36c260ca12845e78639e67b4465193a1 */
+
