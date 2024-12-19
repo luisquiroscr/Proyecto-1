@@ -535,10 +535,18 @@ p {
   height: 98%; /* Asegura que ambas tarjetas tengan la misma altura */
   width: 98%; /* Ancho completo */
   margin: 20 auto; /* Elimina márgenes adicionales */
-  border-radius: 20px; /* Bordes redondeados */
+  /* border-radius: 20px;Bordes redondeados */
   padding: 20px; /* Espaciado interno */
   background-color: rgba(255, 255, 255, 0.8); /* Fondo opcional */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para mejor diseño */
+}
+
+.contenido-descripcion h3{
+  border-radius: 20px 20px 0 0;
+}
+
+.contenido-descripcion p{
+  border-radius: 0 0 20px 20px;
 }
 
 /* .contenido-descripcion {
