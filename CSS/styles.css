@@ -401,7 +401,7 @@ p {
   color: #272829;
 }
 
-/* Se crea div con las dos tarjetas dentro para controlarlas de forma homogenea */
+/* sE INTRODUCEN LAS DOS TARJETAS DENTRO DE UN DIV PARA CONTROLAR EL CONTENIDO DE FORMA HOMOGENEA */
 .contenido-creadores {
   display: flex;
  justify-items: center;
@@ -576,4 +576,5 @@ p {
 } */
 
 /* ======= */
-
+/* Revisar si sincroniza bien  */
+/* >>>>>>> 582965af36c260ca12845e78639e67b4465193a1 */
