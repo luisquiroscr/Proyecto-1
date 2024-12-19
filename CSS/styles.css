@@ -375,6 +375,14 @@ p {
 
 /* Pagina Sobre Nosotros */
 
+.contenido-creadores {
+  display: flex;
+  gap: 20px;
+  background-color: grey;
+  padding: 20px;
+
+}
+
 /* .creadores { revisar para poder fijar el alto del contenedor sin que varie */
 .creadores {
   display: grid;
