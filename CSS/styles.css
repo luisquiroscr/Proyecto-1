@@ -125,7 +125,7 @@ li {
   gap: 10px;
 }
 
-.tarjetas-noticias__tarjeta > h3,
+.tarjetas-noticias__tarjeta>h3,
 p {
   display: flex;
   flex-direction: row;
@@ -137,7 +137,7 @@ p {
   /* margin-top: 20px; */
 }
 
-.tarjetas-noticias__tarjeta > a {
+.tarjetas-noticias__tarjeta>a {
   display: flex;
   justify-items: center;
   justify-content: center;
@@ -148,6 +148,7 @@ p {
   width: 100%;
   gap: 10px;
 }
+
 .video {
   display: flex;
   justify-content: space-between;
@@ -207,7 +208,7 @@ p {
   margin-bottom: 10px;
 }
 
-.tarjetas-noticias__tarjeta-dos > a {
+.tarjetas-noticias__tarjeta-dos>a {
   display: flex;
   justify-items: center;
   justify-content: center;
@@ -219,11 +220,11 @@ p {
   gap: 10px;
 }
 
-.tarjetas-noticias__tarjeta > a:hover {
+.tarjetas-noticias__tarjeta>a:hover {
   color: #f09319;
 }
 
-.tarjetas-noticias__tarjeta-dos > a:hover {
+.tarjetas-noticias__tarjeta-dos>a:hover {
   color: #f09319;
 }
 
@@ -323,10 +324,14 @@ p {
 
 .creadores {
   display: grid;
-  grid-template-columns: 1fr; /* Dos columnas de igual tamaño */
-  gap: 10px; /* Espaciado entre las tarjetas */
-  max-height: 100%; /* Altura del contenedor */
-  width: 100%; /* Ancho completo */
+  grid-template-columns: 1fr;
+  /* Dos columnas de igual tamaño */
+  gap: 10px;
+  /* Espaciado entre las tarjetas */
+  max-height: 100%;
+  /* Altura del contenedor */
+  width: 100%;
+  /* Ancho completo */
   text-align: center;
   margin: 10px auto;
   background-image: url("../Assets/imagenes/portadacod.png");
@@ -349,24 +354,36 @@ p {
   display: flex;
   justify-items: center;
   gap: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo opcional */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fondo opcional */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   max-width: 100%;
 }
 
 .tarjeta-creador {
-  display: flex; /* Cambia de grid a flex para simplificar la alineación */
-  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
-  height: 100%; /* Asegura que ambas tarjetas tengan la misma altura */
-  width: 100%; /* Ancho completo */
-  margin: 0; /* Elimina márgenes adicionales */
-  border-radius: 20px; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo opcional */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para mejor diseño */
+  display: flex;
+  /* Cambia de grid a flex para simplificar la alineación */
+  flex-direction: column;
+  /* Asegura que el contenido se apile verticalmente */
+  justify-content: center;
+  /* Centra verticalmente */
+  align-items: center;
+  /* Centra horizontalmente */
+  height: 100%;
+  /* Asegura que ambas tarjetas tengan la misma altura */
+  width: 100%;
+  /* Ancho completo */
+  margin: 0;
+  /* Elimina márgenes adicionales */
+  border-radius: 20px;
+  /* Bordes redondeados */
+  padding: 20px;
+  /* Espaciado interno */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fondo opcional */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra para mejor diseño */
 }
 
 .tarjeta-creador p,
@@ -426,13 +443,19 @@ p {
 }
 
 .contenido-descripcion {
-  height: 98%; /* Asegura que ambas tarjetas tengan la misma altura */
-  width: 98%; /* Ancho completo */
-  margin: 20 auto; /* Elimina márgenes adicionales */
+  height: 98%;
+  /* Asegura que ambas tarjetas tengan la misma altura */
+  width: 98%;
+  /* Ancho completo */
+  margin: 20 auto;
+  /* Elimina márgenes adicionales */
   /* border-radius: 20px;Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo opcional */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para mejor diseño */
+  padding: 20px;
+  /* Espaciado interno */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fondo opcional */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra para mejor diseño */
 }
 
 .contenido-descripcion h3 {
@@ -443,35 +466,61 @@ p {
   border-radius: 0 0 20px 20px;
 }
 
-
-.Contacto{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+.dividir {
   background: #373a40;
   background-image: url("../Assets/imagenes/portadacod.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-attachment: fixed;
-  text-align: left;
-  text-shadow: #272829;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  max-width: 100%;
   max-height: 100%;
-  padding: 15px 5px;
-  gap: 20px;
 }
 
-.volumen{
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  text-shadow: #272829;
+  padding: 20px 20px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fondo opcional */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra para mejor diseño */
+
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  text-shadow: #272829;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 15px 5px;
+  margin-top: 40px;
+  gap: 20px;
+  color: #272829;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo opcional */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para mejor diseño */
+}
+
+/* .volumen{
   display: flex;
   flex-direction: column;
   align-items: start;
   margin-left: 50px;
-  margin-top: 200px;
+  margin-top: 20px;
   height: 50%;
   gap: 20px;
-} 
+}  */
 
-.tarjeta-declaracion{
+.tarjeta-declaracion {
   background: #373a40;
   background-image: url("../Assets/imagenes/portadacod.png");
   background-blend-mode: overlay;
@@ -485,40 +534,21 @@ p {
   color: #fff;
   text-shadow: #272829;
   padding: 20px 20px;
-  margin: 15px 0px 10px 0px;
-  height: 75%;
+  /* margin: 15px 0px 10px 0px; */
+  height: 100%;
 }
 
-.contenido-declaracion{
+.contenido-declaracion {
   display: flex;
   flex-direction: column;
   justify-content: left;
   background-color: rgba(255, 255, 255, 0.5);
   color: #272829;
   width: 100%;
-  overflow: scroll;
-  max-height: 75%;
+  max-height: 100%;
   text-align: left;
   text-decoration: none;
   margin: 0px auto;
   margin-top: 20px;
   padding: 15px;
 }
-
-.support{
-  color:#272829 ;
-  display: flex;
-  justify-content: left !important;
-  justify-items: left;
-  text-align: left !important;
-  text-align: left;
-  margin-top: 20px;
-}
-
-.flow{
-  display: flex;
-  flex-direction: column;
-  justify-content: center !important;
-  align-content: center !important;
-}
-
