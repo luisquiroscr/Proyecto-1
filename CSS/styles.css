@@ -483,6 +483,7 @@ p {
   flex-direction: column;
   justify-content: left;
   align-items: left;
+  overflow: hidden;
   text-align: left;
   text-shadow: #272829;
   padding: 20px 20px;
@@ -506,15 +507,17 @@ p {
   margin-top: 40px;
   gap: 20px;
   color: #272829;
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo opcional */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para mejor diseño */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fondo opcional */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra para mejor diseño */
 }
 
-.textarea{
+.textarea {
   resize: none;
   width: 100%;
   height: 400px;
-  
+
 }
 
 /* .volumen{
@@ -574,7 +577,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden; /* Inicialmente no visible */
+  visibility: hidden;
+  /* Inicialmente no visible */
   opacity: 0;
   transition: visibility 0s, opacity 0.3s ease-in-out;
 }
@@ -589,13 +593,14 @@ p {
   text-align: center;
   padding: 20px;
   letter-spacing: 1.5px;
- 
+
 }
 
 /* Botón cerrar */
 .close {
-  display: block; 
-  margin: 0 auto; /* Esto lo centra horizontalmente al como hacemos con las paginas normalmente */
+  display: block;
+  margin: 0 auto;
+  /* Esto lo centra horizontalmente al como hacemos con las paginas normalmente */
   width: 20%;
   background: #ff5555;
   color: #fff;
@@ -606,7 +611,7 @@ p {
 }
 
 /* Mostrar el modal cuando el checkbox está marcado */
-#show-modal:checked ~ .modal {
+#show-modal:checked~.modal {
   visibility: visible;
   opacity: 1;
 }
@@ -623,7 +628,7 @@ p {
   background-blend-mode: overlay;
   background-size: cover;
   background-attachment: fixed;
-  display: grid; 
+  display: grid;
   text-align: center;
   margin: 0 auto;
   /* background: #007bff; */
@@ -635,18 +640,19 @@ p {
   margin: 5px;
 }
 
-.subrayar{
+.subrayar {
   text-decoration: underline;
 }
 
-.subrayar:hover{
+.subrayar:hover {
   color: #dc143c;
 
 }
 
-.button{
-  display: block; 
-  margin: 0 auto; /* Esto lo centra horizontalmente al como hacemos con las paginas normalmente */
+.button {
+  display: block;
+  margin: 0 auto;
+  /* Esto lo centra horizontalmente al como hacemos con las paginas normalmente */
   width: 20%;
   background: #ff5555;
   color: #fff;
@@ -656,3 +662,76 @@ p {
   border-radius: 5px;
 
 }
+
+.FAQ {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  font-size: 30px;
+  color: #272829;
+}
+
+.videoFAQ {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-content: space-around; */
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+  gap: 15px;
+  object-fit: fill;
+  /* /Evita que la imagen se distorcione/ */
+  margin-top: 10px;
+  background-blend-mode: overlay;
+  background-size: cover;
+  gap: 20px;
+
+}
+
+.FAQP {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  font-size: 18px;
+  color: #272829;
+}
+
+.FAQH {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  font-size: 20px;
+  color: #272829;
+
+}
+
+.imgFAQplus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  max-height: 100%;
+  /* height: 800px; */
+  gap: 15px;
+  object-fit: contain;
+  /* /Evita que la imagen se distorcione/ */
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-blend-mode: overlay;
+  background-size: auto;
+  gap: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  /* Transición suave */
+}
+
+.imgFAQplus:hover {
+  transform: scale(1.1);
+  /* Aumenta el tamaño al 110% */
+}
+
+.dinamico{
+  overflow: hidden;
+}
+
