@@ -48,7 +48,7 @@
         <header class="cabecera">
 
             <h1>SOPORTE TÉCNICO.</h1>
-            
+
         </header>
 
         <main class="box"> <!--Formulario de contacto-->
@@ -127,10 +127,12 @@
 
 
                     <form class="Contacto" action="#">
-                      
+
                         <ul class="volumen">
                             
+
                             <li class="Form">
+                                <h1>FORMULARIO DE CONTACTO DEL SERVICIO DE SOPORTE</h1>
                                 <label for="Nombre">Escriba su nombre:</label>
                                 <input type="text" placeholder="Escriba su nombre aquí" required>
                                 <label for="Apellido_1">Primer Apellido:</label>
@@ -154,94 +156,207 @@
                                     <option value="other">Otro motivo</option>
                                 </select>
                                 <label for="Detalles">Detalles del Problema:</label>
-                                <textarea name="Detalles" id="Detalles" rows="10" cols="100"
-                                    placeholder="Escriba detalladamente cual es el motivo de su"></textarea>
+                                <textarea class="textarea" name="Detalles" id="Detalles"
+                                    placeholder="Escriba detalladamente cual es el motivo de su consulta o problema"></textarea>
                             </li>
 
-                            <ul class="">
-                                <li>
-                                    <label for="checkbox">He leído la información y acepto los terminos y
-                                        condiciones.</label>
-                                    <input type="checkbox" name="Acept" id="checkbox">
-                                </li>
-                                <li>
-                                    <button class="button" type="submit">Enviar Formulario</button>
-                                </li>
+                            <ul class="oculto">
+
+                                <!-- Checkbox oculto para manejar el estado -->
+                                <input type="checkbox" id="show-modal">
+
+                                <!-- Botón para abrir el modal -->
+                                <label for="show-modal" class="open-modal">Ver Terminos y Condiciones</label>
+
+                                <!-- Contenedor del modal -->
+                                <div class="modal">
+                                    <div class="modal-content">
+                                        <article class="">
+                                            <div class="">
+                                                <h3 class="">Declaración de Privacidad</h3>
+                                                <p class="">En Call of Duty® Fake, valoramos y respetamos la
+                                                    privacidad de
+                                                    nuestros usuarios. La información que proporciones en el
+                                                    formulario de soporte será
+                                                    tratada con estricta confidencialidad y utilizada
+                                                    exclusivamente
+                                                    para gestionar y
+                                                    resolver tu consulta o incidencia.</p>
+
+                                                <h3 class="">Uso de la información</h3>
+                                                <p class="">Los datos recopilados, como tu nombre, dirección de
+                                                    correo
+                                                    electrónico,
+                                                    detalles de
+                                                    la incidencia y cualquier otra información proporcionada,
+                                                    serán
+                                                    utilizados
+                                                    únicamente con el propósito de:</p>
+
+                                                <ul>
+                                                    <li class="">- Analizar y solucionar problemas técnicos.
+                                                    </li>
+                                                    <li class="">- Brindar una respuesta personalizada a tu
+                                                        solicitud.</li>
+                                                    <li class="">- Mejorar nuestros servicios basándonos en
+                                                        patrones
+                                                        de
+                                                        incidencias
+                                                        comunes.</li>
+                                                </ul>
+                                                <h3 class="">Protección de datos</h3>
+                                                <p class="">Implementamos medidas de seguridad administrativas,
+                                                    técnicas y
+                                                    físicas
+                                                    para
+                                                    proteger
+                                                    tu información contra accesos no autorizados, alteraciones,
+                                                    divulgaciones o
+                                                    destrucciones indebidas.</p>
+
+                                                <h3 class="">Retención de datos</h3>
+                                                <p class="">La información recopilada será almacenada únicamente
+                                                    durante el
+                                                    tiempo
+                                                    necesario
+                                                    para cumplir con los fines mencionados o mientras lo exijan
+                                                    las
+                                                    leyes aplicables.
+                                                    Una vez concluido este periodo, los datos serán eliminados
+                                                    de
+                                                    manera segura.</p>
+
+                                                <h3 class="">Limitaciones de uso</h3>
+                                                <p class="">Tu información personal no será compartida, vendida
+                                                    ni
+                                                    transferida a
+                                                    terceros,
+                                                    excepto en los siguientes casos:</p>
+                                                <ul>
+                                                    <li class="">1. Cuando sea necesario para cumplir con
+                                                        normativas
+                                                        legales.
+                                                    </li>
+                                                    <li class="">2. Para proteger los derechos y la seguridad de
+                                                        la
+                                                        empresa o de
+                                                        otros
+                                                        usuarios.
+                                                    </li>
+                                                </ul>
+                                                <h3 class="">Exclusiones</h3>
+                                                <p class="">Recuerda que el formulario de soporte no debe ser
+                                                    utilizado para
+                                                    gestiones
+                                                    relacionadas con el baneo de cuentas. Para tales casos,
+                                                    comunícate mediante
+                                                    correo electrónico a supportadvance@callofduty.com.</p>
+
+                                                <h3 class="">Tus derechos</h3>
+                                                <p class="">Puedes solicitar acceso, corrección o eliminación de
+                                                    tus
+                                                    datos en
+                                                    cualquier
+                                                    momento, conforme a las leyes aplicables sobre privacidad y
+                                                    protección de datos.
+                                                    Para ejercer estos derechos, contáctanos a través de los
+                                                    canales
+                                                    proporcionados en
+                                                    nuestra página oficial.
+                                                    Esta declaración puede ser actualizada ocasionalmente para
+                                                    reflejar cambios en
+                                                    nuestras prácticas de privacidad o requisitos legales. Te
+                                                    recomendamos revisarla
+                                                    periódicamente para mantenerte informado.</p>
+
+                                                <p class=""> Call of Duty® Fake
+                                                    Siempre comprometidos con tu privacidad y confianza.
+                                                </p>
+
+                                                <ul>
+                                                    <label class="subrayar" for="checkbox">Acepto los Terminos y Condiciones</label>
+                                                    <input type="checkbox" name="Acept" id="checkbox" required>
+                                                </ul>
+
+
+                                                <ul>
+                                                    <!-- Botón para cerrar el modal -->
+                                                    <li>
+                                                        <label for="show-modal" class="close">Cerrar</label>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+
                             </ul>
+
                         </ul>
+
+                        <ul>
+                            <li>
+                                <button class="button" type="submit">Enviar Formulario</button>
+                            </li>
+                        </ul>
+
                     </form>
                 </aside>
                 <article class="tarjeta-declaracion">
                     <div class="contenido-declaracion">
-                        <h3 class="support">Declaración de Privacidad</h3>
-                        <p class="support">En Call of Duty® Fake, valoramos y respetamos la privacidad de
-                            nuestros usuarios. La información que proporciones en el formulario de soporte será
-                            tratada con estricta confidencialidad y utilizada exclusivamente para gestionar y
-                            resolver tu consulta o incidencia.</p>
+                        <!--Se cambian etiquetas no semanticas por etiquetas semanticas article para contenido independiente-->
+                        <article class="tarjetas-noticias__tarjeta">
+                            <video class="video" controls muted poster="../Assets/imagenes/CODBOPSBANNER.png">
+                                <source
+                                    src="./Assets/videos/Call of Duty Black Ops 6 Tráiler del lanzamiento global.mp4"
+                                    type="video/mp4">
+                                Tu navegador no soporta este video.
+                            </video>
+                            <h3>BLACK OPS 6</h3>
+                            <a href="https://www.callofduty.com/es/blackops6" target="_blank">Más información<i
+                                    class="fas fa-angle-double-right"></i></a>
+                        </article>
 
-                        <h3 class="support">Uso de la información</h3>
-                        <p class="support">Los datos recopilados, como tu nombre, dirección de correo
-                            electrónico,
-                            detalles de
-                            la incidencia y cualquier otra información proporcionada, serán utilizados
-                            únicamente con el propósito de:</p>
+                        <article class="tarjetas-noticias__tarjeta">
+                            <video class="video" controls muted poster="../Assets/imagenes/CODMW3.png">
+                                <source
+                                    src="../Assets/videos/Call of Duty Modern Warfare 3 TRAILER DE REVELACIÓN en Español Latino.mp4 of Duty Modern Warfare 3 TRAILER DE REVELACIÓN en Español Latino.mp4"
+                                    type="video/mp4">
+                                Tu navegador no soporta este video.
+                            </video>
+                            <h3>MODERN WARFARE III</h3>
+                            <a href="https://www.callofduty.com/es/store/games/modernwarfare3" target="_blank">Más
+                                información<i class="fas fa-angle-double-right"></i></a>
+                        </article>
 
-                        <ul>
-                            <li class="support">- Analizar y solucionar problemas técnicos.</li>
-                            <li class="support">- Brindar una respuesta personalizada a tu solicitud.</li>
-                            <li class="support">- Mejorar nuestros servicios basándonos en patrones de
-                                incidencias
-                                comunes.</li>
-                        </ul>
-                        <h3 class="support">Protección de datos</h3>
-                        <p class="support">Implementamos medidas de seguridad administrativas, técnicas y
-                            físicas
-                            para
-                            proteger
-                            tu información contra accesos no autorizados, alteraciones, divulgaciones o
-                            destrucciones indebidas.</p>
-
-                        <h3 class="support">Retención de datos</h3>
-                        <p class="support">La información recopilada será almacenada únicamente durante el
-                            tiempo
-                            necesario
-                            para cumplir con los fines mencionados o mientras lo exijan las leyes aplicables.
-                            Una vez concluido este periodo, los datos serán eliminados de manera segura.</p>
-
-                        <h3 class="support">Limitaciones de uso</h3>
-                        <p class="support">Tu información personal no será compartida, vendida ni transferida a
-                            terceros,
-                            excepto en los siguientes casos:</p>
-                        <ul>
-                            <li class="support">1. Cuando sea necesario para cumplir con normativas legales.
-                            </li>
-                            <li class="support">2. Para proteger los derechos y la seguridad de la empresa o de
-                                otros
-                                usuarios.
-                            </li>
-                        </ul>
-                        <h3 class="support">Exclusiones</h3>
-                        <p class="support">Recuerda que el formulario de soporte no debe ser utilizado para
-                            gestiones
-                            relacionadas con el baneo de cuentas. Para tales casos, comunícate mediante
-                            correo electrónico a supportadvance@callofduty.com.</p>
-
-                        <h3 class="support">Tus derechos</h3>
-                        <p class="support">Puedes solicitar acceso, corrección o eliminación de tus datos en
-                            cualquier
-                            momento, conforme a las leyes aplicables sobre privacidad y protección de datos.
-                            Para ejercer estos derechos, contáctanos a través de los canales proporcionados en
-                            nuestra página oficial.
-                            Esta declaración puede ser actualizada ocasionalmente para reflejar cambios en
-                            nuestras prácticas de privacidad o requisitos legales. Te recomendamos revisarla
-                            periódicamente para mantenerte informado.</p>
-
-                        <p class="support"> Call of Duty® Fake
-                            Siempre comprometidos con tu privacidad y confianza.
-                        </p>
+                        <article class="tarjetas-noticias__tarjeta">
+                            <video class="video" controls muted poster="../Assets/imagenes/CODMW2.png">
+                                <source
+                                    src="../Assets/videos/Call Of Duty Modern Warfare 2  Tráiler Revelación Español Latino.mp4"
+                                    type="video/mp4">
+                                Tu navegador no soporta este video.
+                            </video>
+                            <h3>MODERN WARFARE II</h3>
+                            <a href="https://www.callofduty.com/es/store/games/modernwarfare2" target="_blank">Más
+                                información <i class="fas fa-angle-double-right"></i></a>
+                        </article>
+                        <article class="tarjetas-noticias__tarjeta">
+                            <video class="video" controls muted poster="../Assets/imagenes/CODADV.png">
+                                <source
+                                    src="../Assets/videos/Tráiler oficial del modo campaña de Call of Duty® Advanced Warfare [ES].mp4"
+                                    type="video/mp4">
+                                Tu navegador no soporta este video.
+                            </video>
+                            <h3>COD: VANGUARD</h3>
+                            <a href="https://www.callofduty.com/es/store/games/vanguard" target="_blank">Más información
+                                <i class="fas fa-angle-double-right"></i></a>
+                        </article>
                     </div>
                 </article>
-                
+
+
             </div>
 
 
