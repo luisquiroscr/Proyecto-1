@@ -125,7 +125,7 @@ li {
   gap: 10px;
 }
 
-.tarjetas-noticias__tarjeta>h3,
+.tarjetas-noticias__tarjeta > h3,
 p {
   display: flex;
   flex-direction: row;
@@ -137,7 +137,7 @@ p {
   /* margin-top: 20px; */
 }
 
-.tarjetas-noticias__tarjeta>a {
+.tarjetas-noticias__tarjeta > a {
   display: flex;
   justify-items: center;
   justify-content: center;
@@ -208,7 +208,7 @@ p {
   margin-bottom: 10px;
 }
 
-.tarjetas-noticias__tarjeta-dos>a {
+.tarjetas-noticias__tarjeta-dos > a {
   display: flex;
   justify-items: center;
   justify-content: center;
@@ -220,11 +220,11 @@ p {
   gap: 10px;
 }
 
-.tarjetas-noticias__tarjeta>a:hover {
+.tarjetas-noticias__tarjeta > a:hover {
   color: #f09319;
 }
 
-.tarjetas-noticias__tarjeta-dos>a:hover {
+.tarjetas-noticias__tarjeta-dos > a:hover {
   color: #f09319;
 }
 
@@ -492,7 +492,6 @@ p {
   /* Fondo opcional */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   /* Sombra para mejor diseño */
-
 }
 
 .Form {
@@ -517,7 +516,6 @@ p {
   resize: none;
   width: 100%;
   height: 400px;
-
 }
 
 /* .volumen{
@@ -563,8 +561,6 @@ p {
   padding: 15px;
 }
 
-
-
 /* Usamos IA para poder realizar una ventana emergente que nos permitiera ver los terminos y condisiones que requeriamos */
 
 .modal {
@@ -593,7 +589,6 @@ p {
   text-align: center;
   padding: 20px;
   letter-spacing: 1.5px;
-
 }
 
 /* Botón cerrar */
@@ -611,7 +606,7 @@ p {
 }
 
 /* Mostrar el modal cuando el checkbox está marcado */
-#show-modal:checked~.modal {
+#show-modal:checked ~ .modal {
   visibility: visible;
   opacity: 1;
 }
@@ -646,7 +641,6 @@ p {
 
 .subrayar:hover {
   color: #dc143c;
-
 }
 
 .button {
@@ -660,7 +654,6 @@ p {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
-
 }
 
 .FAQ {
@@ -685,7 +678,6 @@ p {
   background-blend-mode: overlay;
   background-size: cover;
   gap: 20px;
-
 }
 
 .FAQP {
@@ -702,7 +694,6 @@ p {
   text-align: justify;
   font-size: 20px;
   color: #272829;
-
 }
 
 .imgFAQplus {
@@ -731,7 +722,51 @@ p {
   /* Aumenta el tamaño al 110% */
 }
 
-.dinamico{
+.dinamico {
   overflow: hidden;
 }
 
+/* Prueba de Responsive de media query para pantalla Proyecto1.html */
+/* Media Query para dispositivos con resolucion maxima de 768px */
+@media (max-width: 768px) {
+  .navegacion-principal__menu a {
+    padding: 50px;
+    text-align: center;
+  }
+
+  .navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjetas-noticias,
+  .tarjetas-noticias-dos {
+    flex-direction: column;
+  }
+
+  .cabecera {
+    background-attachment: scroll;
+  }
+
+  .contenedor {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+/* Media Query para dispositivos con resolucion maxima de 480px */
+@media (max-width: 480px) {
+  .navegacion-principal__menu a {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cabecera h2,
+  .cabecera p {
+    font-size: smaller;
+  }
+
+  .boton {
+    padding: 10px;
+  }
+}
